@@ -1,11 +1,9 @@
+import Hamburger from "./Hamburger/Hamburger"
 
-
-function LinksContainer() {
-  return (
-    <>
-      <h1>link</h1>
-    </>
-  )
+export default function LinksContainer() {
+    return (
+        <>
+            <Hamburger />
+        </>
+    )
 }
-
-export default LinksContainer

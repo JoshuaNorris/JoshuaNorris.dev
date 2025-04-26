@@ -3,8 +3,22 @@ import React from 'react';
 export default function Logo () {
 
     const color = "#000";
-    const letterSize = 8;
-    const bracketSize = 8;
+    const letterSize = 16;
+    const bracketSize = 32;
+
+    const letterStyling = {
+        fontFamily: 'Pixelify Sans, sans-serif',
+        fontOpticalSizing: 'auto',
+        fontWeight: 400,
+        fontStyle: 'normal',
+    }
+
+    const bracketStyling = {
+        fontFamily: 'Inconsolata, monospace',
+        fontOpticalSizing: 'auto',
+        fontWeight: 300,
+        fontStyle: 'normal',
+    }
 
     return (
         <svg
@@ -13,17 +27,11 @@ export default function Logo () {
             height="32"
             viewBox="0 0 32 32"
         >
-        style={{
-            fontFamily: 'Pixelify Sans, sans-serif',
-            fontOpticalSizing: 'auto',
-            fontWeight: 400,
-            fontStyle: 'normal',
-        }}
 
-            <text x="4" y="20" fontSize={fontSize} fill={color}>{'{'}</text>
-            <text x="12" y="20" fontSize={letterSize} fill={color}>j</text>
-            <text x="20" y="20" fontSize={letterSize} fill={color}>n</text>
-            <text x="28" y="20" fontSize={fontSize} fill={color}>{'}'}</text>
+            <text x="0" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'{'}</text>
+            <text x="8" y="18" fontSize={letterSize} style={letterStyling} fill={color}>j</text>
+            <text x="16" y="18" fontSize={letterSize} style={letterStyling} fill={color}>n</text>
+            <text x="22" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
 
         </svg>
     );

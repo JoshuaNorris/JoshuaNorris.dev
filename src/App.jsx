@@ -9,12 +9,11 @@ function App() {
 
   return (
     <>
-      <NavigationBar />
-      {/* <Routes>
+      <Routes>
         <Route path = "" element={ <NavigationBar/> }>
           <Route index element={ <Home/> } />
         </Route>
-      </Routes> */}
+      </Routes>
     </>
   )
 }
