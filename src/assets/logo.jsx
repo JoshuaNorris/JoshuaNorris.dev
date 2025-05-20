@@ -23,15 +23,15 @@ export default function Logo () {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="40"
+            height="40"
             viewBox="0 0 32 32"
         >
 
             <text x="0" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'{'}</text>
             <text x="8" y="18" fontSize={letterSize} style={letterStyling} fill={color}>j</text>
             <text x="16" y="18" fontSize={letterSize} style={letterStyling} fill={color}>n</text>
-            <text x="22" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
+            <text x="19" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
 
         </svg>
     );
