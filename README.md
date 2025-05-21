@@ -11,3 +11,12 @@ Personal Blog
 Professional Blog
 Josh Needs Help With
 Josh Can Hely With
+
+
+
+
+React router
+
+
+
+todo finish moving routes to config (following gpt response)
