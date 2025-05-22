@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './MobileNavigation.scss';
+import { NavLink } from 'react-router-dom';
 
 export default function MobileNavigation() {
 
@@ -26,11 +27,11 @@ export default function MobileNavigation() {
             </div>
             <nav id='MobileNav' ref={nav}>
                 <ul id='nav-ul'>
-                    <li><a href="#" onClick={hideMenu}>Home</a></li>
-                    <li><a href="#" onClick={hideMenu}>About</a></li>
-                    <li><a href="#" onClick={hideMenu}>Gallery</a></li>
-                    <li><a href="#" onClick={hideMenu}>Blog</a></li>
-                    <li><a href="#" onClick={hideMenu}>Contact</a></li>
+                    <li><NavLink to="#" onClick={hideMenu}>Home</NavLink></li>
+                    <li><NavLink to="#" onClick={hideMenu}>About</NavLink></li>
+                    <li><NavLink to="#" onClick={hideMenu}>Gallery</NavLink></li>
+                    <li><NavLink to="#" onClick={hideMenu}>Blog</NavLink></li>
+                    <li><NavLink to="#" onClick={hideMenu}>Contact</NavLink></li>
                 </ul>
             </nav>
         </>

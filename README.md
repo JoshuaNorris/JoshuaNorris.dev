@@ -19,4 +19,4 @@ React router
 
 
 
-todo finish moving routes to config (following gpt response)
+todo figure out why page isn't rendering... maybe convert routes.jsx to a const instead of function
