@@ -34,44 +34,34 @@
 // Navigation Menu Styles
 //-----------------------------------------------
 #MobileNav {
+    // Position
     position: fixed;
     inset: 0;
-
-    height: 90vh;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    width: 100%;
     z-index: 0;
 
+    // Dimensions
+    height: 90vh;
+    width: 100%;
+    border-left: solid black 1px;
+
+    // Children Properties
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: solid black 1px;
-
-    // figure out why ul has 40 padding on left
-    #nav-ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 85%;
-        font-size: 2rem;
-
-        gap: 16px;
-        
-        // Undoing a preset for ul.
-        padding: 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: #333;
-        text-align: center;
-    }
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 16px;
 }
 
 // When nav is active move it to be seen.
 #MobileNav.active {
     transform: translateX(0);
+}
+
+.MobileNavLink {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
 }

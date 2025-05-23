@@ -12,27 +12,33 @@ const ImJosh            = lazy(() => import('./pages/ImJosh/ImJosh'));
 const JoshCanHelpWith   = lazy(() => import('./pages/JoshCanHelpWith/JoshCanHelpWith'));
 const JoshWantsHelpWith = lazy(() => import('./pages/JoshWantsHelpWith/JoshWantsHelpWith'));
 
-export default function routes() {
-    return [
-        { 
-            path : '/',
-            element : <NavigationBar />,
-            children : [
-                { index: true, element: <Home/> },
-                { path : "about-this-website", element : <AboutThisWebsite/>},
-                { path : "blog", element : <Blog/> },
-                { path : "im-josh", element : <ImJosh/> },
-                { path : "josh-can-help-with", element : <JoshCanHelpWith/> },
-                { path : "josh-wants-help-with", element : <JoshWantsHelpWith/> },
 
-                /* PROTECTED ROUTES */
+export const HOME_PATH = "/";
+export const ABOUT_PATH = "/about-this-website";
+export const BLOG_PATH = "/blog";
+export const IM_JOSH_PATH = "/im-josh";
+export const JOSH_CAN_HELP_PATH = "/josh-can-help-with";
+export const JOSH_WANTS_HELP_PATH = "/josh-wants-help-with";
 
-                /* 404 CATCH ALL */
-                {path : "*", element : <NotFound /> }
-            ]
-        }
-    ];
-}
+export const routes = [
+    { 
+        path : '',
+        element : <NavigationBar />,
+        children : [
+            { path : HOME_PATH, element: <Home/> },
+            { path : ABOUT_PATH, element : <AboutThisWebsite/>},
+            { path : BLOG_PATH, element : <Blog/> },
+            { path : IM_JOSH_PATH, element : <ImJosh/> },
+            { path : JOSH_CAN_HELP_PATH, element : <JoshCanHelpWith/> },
+            { path : JOSH_WANTS_HELP_PATH, element : <JoshWantsHelpWith/> },
+
+            /* PROTECTED ROUTES */
+
+            /* 404 CATCH ALL */
+            {path : "*", element : <NotFound /> }
+        ]
+    }
+];
 
     /*
     Could have a isLogged in check here...
