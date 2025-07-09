@@ -8,3 +8,10 @@ $accent-light: #C1121f;
 * {
     overflow-x: hidden;
 }
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}

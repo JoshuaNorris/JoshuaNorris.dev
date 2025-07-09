@@ -1,6 +1,6 @@
 import './NotFound.scss';
 
-export default function NotFounnd() {
+export default function NotFound() {
     return (
         <>
             <h1>NOT FOUND</h1>

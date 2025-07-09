@@ -1,3 +1,3 @@
-Todo
+### Todo
 
-Customizing / Styling login page.
+- start design of blog page
