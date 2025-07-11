@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { routes } from "./configuration/routes";
 import Loading from "./pages/Loading/Loading";
 
+
 function App() {
 
     return (

@@ -3,9 +3,10 @@ import './ArticleFull.scss';
 /**
  * Convert the article object to be for full Article Page
  */
-// TODO
+// TODO Setup Styling for general container
+// TODO Setup styling for elememnts
 export default function ArticleFull({ article }) {
-    const { h1, summary, h2 } = article;
+    const { h1, summary } = article;
 
     return (
         <>

@@ -15,3 +15,20 @@ $accent-light: #C1121f;
     height: 100vh;
     width: 100vw;
 }
+
+.contentPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    width: 100%;
+    max-width: 800px;
+    gap: 16px;
+}

@@ -1,8 +1,8 @@
-
-export default function blog() {
+export default function article2() {
     return {
-        "h1": "Blog 1",
-        "summary": "This is a blog 1 about a lot of interesting stuff...",
+        "h1": "Blog 2",
+        "image": "src/assets/article2.png",
+        "summary": "This is a blog 2 about a lot of interesting stuff...",
         "h2": {
             "titles": ["To Start...", "To End..."],
             "paragraphs": [

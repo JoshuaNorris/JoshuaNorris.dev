@@ -1,3 +1,8 @@
+### Next Step
+
+- Look over infinite scroll strategy from ztm
+
+
 ### Long-Term Todos
 
 - Setup blog creation to be done through website

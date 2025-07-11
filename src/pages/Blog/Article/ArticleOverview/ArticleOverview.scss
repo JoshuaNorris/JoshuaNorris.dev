@@ -1,0 +1,12 @@
+.articleOverview {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.article-overview-image{
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+}
