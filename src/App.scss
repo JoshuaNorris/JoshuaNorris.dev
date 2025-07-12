@@ -5,15 +5,11 @@ $base: #FDF0D5;
 $accent-dark: #780000;
 $accent-light: #C1121f;
 
-* {
-    overflow-x: hidden;
-}
-
 #root {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .contentPage {
@@ -31,4 +27,11 @@ $accent-light: #C1121f;
     width: 100%;
     max-width: 800px;
     gap: 16px;
+}
+
+// Remove default styling for a elements.
+a {
+    all: unset;
+    display: inline;
+    cursor: pointer;
 }

@@ -7,7 +7,7 @@ export default function DesktopNavigation({ links }) {
     function getLinks() {
         return links.map(
             ({ path, heading }) =>
-                <NavLink className="DesktopNavLink" to={ path } key={heading}>
+                <NavLink className="DesktopNavLink" to={ path } key={ heading }>
                     { heading }
                 </NavLink>
         );

@@ -28,10 +28,10 @@ export default function Logo () {
             viewBox="0 0 32 32"
         >
 
-            <text x="0" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'{'}</text>
-            <text x="7.5" y="18" fontSize={letterSize} style={letterStyling} fill={color}>j</text>
-            <text x="15.5" y="18" fontSize={letterSize} style={letterStyling} fill={color}>n</text>
-            <text x="19" y="24" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
+            <text x="0" y="29" fontSize={bracketSize} style={bracketStyling} fill={color}>{'{'}</text>
+            <text x="7.5" y="23" fontSize={letterSize} style={letterStyling} fill={color}>j</text>
+            <text x="15.5" y="23" fontSize={letterSize} style={letterStyling} fill={color}>n</text>
+            <text x="19" y="29" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
 
         </svg>
     );
