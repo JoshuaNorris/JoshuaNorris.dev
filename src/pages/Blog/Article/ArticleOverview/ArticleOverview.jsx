@@ -1,19 +1,30 @@
+import { Link } from 'react-router-dom';
 import './ArticleOverview.scss';
+import { BLOG_PATH } from '../../../../configuration/routes';
 
 /**
  * Convert the article object to be for an overview card
  */
-// TODO Add styling, probably just a rectangle in the space it's container gives it with a mobile format that is more of a square
-// TODO Add dates to object
-// TODO Add images to object
-// TODO Setup link from this element to the full article page
+// TODO Add styling to make this look like a "card"
+// TODO Figure out how to pass article information to the article page
 export default function ArticleOverview({ article }) {
-    const { h1, image, summary } = article;
+    const { h1, image } = article;
+
+    function urlifyTitle( title ) {
+        return title
+            .toLowerCase()
+            .normalize('NFKD')                   // split accented letters
+            .replace(/[\u0300-\u036F]/g, '')     // remove diacritic marks
+            .replace(/[^a-z0-9\s-]/g, '')        // strip invalid chars
+            .trim()                              // remove leading/trailing spaces
+            .replace(/\s+/g, '-')                // spaces → hyphens
+            .replace(/-+/g, '-');
+    }
 
     return (
-        <li className='articleOverview'>
+        <Link to={ BLOG_PATH + "/" + urlifyTitle( h1 )} className='articleOverview' key={ urlifyTitle( h1 ) }>
             <img className='article-overview-image' src={image}></img>
             <h2>{h1}</h2>
-        </li>
+        </Link>
     )
 }

@@ -21,7 +21,7 @@ export default function MobileNavigation({ links }) {
     function getLinks() {
         return links.map(
             ({ path, heading }) =>
-                <NavLink className="MobileNavLink" to={ path } onClick={ hideMenu } key={heading}>
+                <NavLink className="MobileNavLink" to={ path } onClick={ hideMenu } key={ heading }>
                     { heading }
                 </NavLink>
         );

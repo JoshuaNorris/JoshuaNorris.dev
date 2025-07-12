@@ -12,11 +12,11 @@ export default function Blog() {
         <div className='contentPage'>
             <div className='contentContainer'>
                 <h1>Here are all the blogs</h1>
-                <ul className='articleList'>
+                <div className='articleList'>
                 { getBlogs().map (
                     ( article ) => <ArticleOverview article={article} />
                 )}
-                </ul>
+                </div>
             </div>
         </div>
     )
