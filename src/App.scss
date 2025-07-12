@@ -29,6 +29,7 @@ $accent-light: #C1121f;
     gap: 16px;
 }
 
+// Remove default styling for a elements.
 a {
     all: unset;
     display: inline;
