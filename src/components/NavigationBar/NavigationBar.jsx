@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom';
 import './NavigationBar.scss';
 import Logo from '../../assets/logo';
 import { NavLink } from 'react-router-dom';
@@ -24,11 +23,8 @@ export default function NavigationBar() {
 
     return (
         <>
-            <div className='NavigationContainer'>
-                <NavLink to={ HOME_PATH }><Logo /></NavLink>
-                { getNavigation() }
-            </div>
-            <Outlet />
+            <NavLink to={ HOME_PATH }><Logo /></NavLink>
+            { getNavigation() }
         </>
     )
 }

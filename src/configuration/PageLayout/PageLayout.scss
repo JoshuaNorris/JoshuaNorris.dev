@@ -1,0 +1,27 @@
+@use '../../scss/index' as vars;
+
+.app-grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-grid__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    width: 100%;
+    max-width: 800px;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.app-grid__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom:solid vars.$accent-light 3px;
+    background-color: vars.$primary-light;
+}

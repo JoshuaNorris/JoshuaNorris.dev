@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 
 import NotFound from '../pages/NotFound/NotFound';
-import NavigationBar from '../components/NavigationBar/NavigationBar';
 import Home from '../pages/Home/Home';
+import PageLayout from './PageLayout/PageLayout';
 
 const AboutThisWebsite  = lazy(() => import('../pages/AboutThisWebsite/AboutThisWebsite'));
 const Blog  = lazy(() => import('../pages/Blog/Blog'));
@@ -17,7 +17,7 @@ export const ARTICLE_PATH = BLOG_PATH + "/:title";
 export const routes = [
     { 
         path : '',
-        element : <NavigationBar />,
+        element : <PageLayout />,
         children : [
             { path : HOME_PATH, element: <Home/> },
             { path : ABOUT_PATH, element : <AboutThisWebsite/>},
