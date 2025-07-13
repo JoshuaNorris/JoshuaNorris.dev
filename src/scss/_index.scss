@@ -1,0 +1,15 @@
+@forward 'variables';
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+// Remove default styling for a elements.
+a {
+    all: unset;
+    display: inline;
+    cursor: pointer;
+}

@@ -1,7 +1,6 @@
-### Next Step
-
-- Look over infinite scroll strategy from ztm
-
+### Next Todos
+- Move all styles into the scss folder
+- fix nav bar style
 
 ### Long-Term Todos
 
