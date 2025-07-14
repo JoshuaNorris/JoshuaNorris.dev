@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import './MobileNavigation.scss';
 import { NavLink } from 'react-router-dom';
 
 export default function MobileNavigation({ links }) {    

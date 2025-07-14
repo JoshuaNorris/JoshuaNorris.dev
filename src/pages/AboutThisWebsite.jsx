@@ -1,4 +1,3 @@
-import './AboutThisWebsite.scss';
 
 export default function AboutThisWebsite() {
     return (

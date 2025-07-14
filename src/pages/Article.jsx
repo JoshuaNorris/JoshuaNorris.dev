@@ -1,6 +1,5 @@
-import { useParams } from 'react-router-dom';
-import './Article.scss';
-import { getArticleByUrl } from '../../configuration/ArticlesBackend/Articles';
+import { useParams } from 'react-router-dom'
+import { getArticleByUrl } from '../configuration/ArticlesBackend/Articles';
 
 /**
  * Convert the article object to be for full Article Page

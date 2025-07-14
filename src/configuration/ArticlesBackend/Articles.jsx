@@ -1,6 +1,6 @@
 import article1 from "./article1";
 import article2 from "./article2";
-import { urlifyTitle } from '../../components/ArticleOverview/ArticleOverview';
+import { urlifyTitle } from '../../components/ArticleOverview';
 
 
 export default function getArticles() {

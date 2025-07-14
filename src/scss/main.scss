@@ -1,0 +1,20 @@
+// For variables and mixins.
+@import '_variables.scss';
+
+// For reseting components and setting universal stylings.
+@import '_base.scss';
+
+// For global layout styling.
+@import '_layout.scss';
+
+// Components
+@import './components/_ArticleOverview.scss';
+@import './components/_NavigationBar.scss';
+
+// Pages
+@import './pages/_AboutThisWebsite.scss';
+@import './pages/_Article.scss';
+@import './pages/_Blog.scss';
+@import './pages/_Home.scss';
+@import './pages/_Loading.scss';
+@import './pages/_NotFound.scss';

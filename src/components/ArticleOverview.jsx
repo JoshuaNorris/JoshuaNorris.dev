@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import './ArticleOverview.scss';
-import { BLOG_PATH } from '../../configuration/routes';
+import { BLOG_PATH } from '../configuration/Routes';
 
 export function urlifyTitle( title ) {
     return title

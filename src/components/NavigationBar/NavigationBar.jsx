@@ -1,10 +1,9 @@
-import './NavigationBar.scss';
 import Logo from '../../assets/logo';
 import { NavLink } from 'react-router-dom';
 
 import { useMediaQuery } from 'react-responsive';
-import MobileNavigation from './Mobile/MobileNavigation';
-import DesktopNavigation from './Desktop/DesktopNavigation';
+import MobileNavigation from './MobileNavigation';
+import DesktopNavigation from './DesktopNavigation';
 import { HOME_PATH, BLOG_PATH } from '../../configuration/routes';
 
 export default function NavigationBar() {
