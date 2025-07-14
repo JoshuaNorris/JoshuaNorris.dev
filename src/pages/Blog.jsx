@@ -1,6 +1,5 @@
-import ArticleOverview from '../../components/ArticleOverview/ArticleOverview';
-import './Blog.scss';
-import getBlogs from '../../configuration/ArticlesBackend/Articles';
+import ArticleOverview from '../components/ArticleOverview';
+import getBlogs from '../configuration/ArticlesBackend/Articles';
 
 /**
  * Take all articles and put them into a Article Overview object

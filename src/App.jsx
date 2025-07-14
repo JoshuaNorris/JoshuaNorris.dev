@@ -1,9 +1,7 @@
-import { Routes, Route, useRoutes } from "react-router-dom";
-import "modern-css-reset";
-// import './App.scss';
+import { useRoutes } from "react-router-dom";
 import { Suspense } from "react";
-import { routes } from "./configuration/routes";
-import Loading from "./pages/Loading/Loading";
+import { routes } from "./configuration/Routes";
+import Loading from "./pages/Loading";
 
 
 function App() {

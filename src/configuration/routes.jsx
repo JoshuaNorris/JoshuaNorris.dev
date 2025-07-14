@@ -1,12 +1,12 @@
 import { lazy } from 'react';
 
-import NotFound from '../pages/NotFound/NotFound';
-import Home from '../pages/Home/Home';
-import PageLayout from './PageLayout/PageLayout';
+import NotFound from '../pages/NotFound';
+import Home from '../pages/Home';
+import PageLayout from './PageLayout';
 
-const AboutThisWebsite  = lazy(() => import('../pages/AboutThisWebsite/AboutThisWebsite'));
-const Blog  = lazy(() => import('../pages/Blog/Blog'));
-const Article  = lazy(() => import('../pages/Article/Article'));
+const AboutThisWebsite  = lazy(() => import('../pages/AboutThisWebsite'));
+const Blog  = lazy(() => import('../pages/Blog'));
+const Article  = lazy(() => import('../pages/Article'));
 
 
 export const HOME_PATH = "/";

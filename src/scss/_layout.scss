@@ -1,5 +1,3 @@
-@use '../../scss/index' as vars;
-
 .app-grid {
     height: 100%;
     width: 100%;
@@ -22,6 +20,6 @@
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    border-bottom:solid vars.$accent-light 3px;
-    background-color: vars.$primary-light;
+    border-bottom:solid $accent-light 3px;
+    background-color: $primary-light;
 }

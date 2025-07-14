@@ -1,8 +1,7 @@
-import './PageLayout.scss';
 import { Outlet } from "react-router-dom";
-import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import NavigationBar from '../components/NavigationBar/NavigationBar';
 
-
+// TODO This should maybe be renamed and moved somewhere?
 export default function GridLayout() {
     return (
         <div className="app-grid">
