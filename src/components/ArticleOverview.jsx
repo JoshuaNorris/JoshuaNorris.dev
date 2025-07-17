@@ -17,14 +17,19 @@ export function urlifyTitle( title ) {
  * Convert the article object to be for an overview card
  */
 // TODO Add styling to make this look like a "card"
-// TODO Figure out how to pass article information to the article page
 export default function ArticleOverview({ article }) {
     const { h1, image } = article;
 
     return (
-        <Link to={ BLOG_PATH + "/" + urlifyTitle( h1 )} className='articleOverview' key={ urlifyTitle( h1 ) }>
+        <Link 
+            to={ BLOG_PATH + "/" + urlifyTitle( h1 )}
+            className='articleOverview'
+            key={ urlifyTitle( h1 ) }
+        >
+
             <img className='article-overview-image' src={image}></img>
             <h2>{h1}</h2>
+            
         </Link>
     )
 }

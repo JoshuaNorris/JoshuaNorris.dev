@@ -2,7 +2,7 @@ import { lazy } from 'react';
 
 import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
-import PageLayout from './PageLayout';
+import PageLayout from '../PageLayout';
 
 const AboutThisWebsite  = lazy(() => import('../pages/AboutThisWebsite'));
 const Blog  = lazy(() => import('../pages/Blog'));

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Logo () {
 
-    const color = "#000";
+    const color = "rgba(45, 45, 45, 0.834)";
     const letterSize = 16;
     const bracketSize = 32;
 
@@ -28,10 +28,10 @@ export default function Logo () {
             viewBox="0 0 32 32"
         >
 
-            <text x="0" y="29" fontSize={bracketSize} style={bracketStyling} fill={color}>{'{'}</text>
-            <text x="7.5" y="23" fontSize={letterSize} style={letterStyling} fill={color}>j</text>
-            <text x="15.5" y="23" fontSize={letterSize} style={letterStyling} fill={color}>n</text>
-            <text x="19" y="29" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
+            <text className='logo' x="0" y="29" fontSize={bracketSize} style={bracketStyling} fill={color}>{'{'}</text>
+            <text className='logo' x="7.5" y="23" fontSize={letterSize} style={letterStyling} fill={color}>j</text>
+            <text className='logo' x="15.5" y="23" fontSize={letterSize} style={letterStyling} fill={color}>n</text>
+            <text className='logo' x="19" y="29" fontSize={bracketSize} style={bracketStyling} fill={color}>{'}'}</text>
 
         </svg>
     );

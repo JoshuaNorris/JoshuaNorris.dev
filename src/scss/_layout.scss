@@ -1,25 +1,35 @@
+@use './_variables.scss' as vars;
+
 .app-grid {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: vars.$base;
+}
+
+.app-grid__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom:solid vars.$primary-dark 1px;
+    // background-color: vars.$primary-light;
 }
 
 .app-grid__content {
+    width: 100%;
+    max-width: 1000px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     padding-top: 24px;
-    width: 100%;
-    max-width: 800px;
     gap: 16px;
     margin-bottom: 24px;
 }
 
-.app-grid__navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    border-bottom:solid $accent-light 3px;
-    background-color: $primary-light;
+.app-grid__footer {
+    height: 66px;
+    width: 100%;
 }

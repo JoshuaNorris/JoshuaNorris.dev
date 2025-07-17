@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import NavigationBar from '../components/NavigationBar/NavigationBar';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import Footer from "./components/Footer";
 
-// TODO This should maybe be renamed and moved somewhere?
 export default function GridLayout() {
     return (
         <div className="app-grid">
@@ -16,7 +16,7 @@ export default function GridLayout() {
             </main>
 
             <footer className="app-grid__footer">
-                {/* TODO make the footer element */}
+                <Footer />
             </footer>
 
         </div>
