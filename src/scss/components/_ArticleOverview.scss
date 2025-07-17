@@ -1,0 +1,37 @@
+.articleOverview {
+    // Positioning the elements inside
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+
+    border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+
+    // Animations
+    transition: all 250ms;
+    // touch-action: manipulation
+
+    &:hover, &:focus {
+        // make border color lighter
+        // make color lighter
+        // make box shadow lighter and x4 size
+    }
+
+    &:hover {
+        transform: translateY( 2px );
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+.article-overview-image{
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
